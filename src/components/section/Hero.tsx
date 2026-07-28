@@ -18,7 +18,7 @@ export default function Hero() {
         frontend web developer<br /> based in Kathmandu.
       </h1>
       <p className="text-gray-500 dark:text-gray-400 mb-8 max-w-2xl mx-auto leading-relaxed text-lg z-10">
-        I am a frontend developer from Kathmandu, Nepal with 3 years of experience in multiple companies like Microsoft, Tesla and Apple.
+        I am a frontend developer from Kathmandu, Nepal with 3 years of experience in multiple companies like F1Soft International, Leapfrog Technology and Web Experts Nepal.
       </p>
       <div className="flex flex-col sm:flex-row items-center justify-center gap-4 z-10">
         <a href="#contact" className="flex items-center justify-center gap-2 bg-gray-900 dark:bg-white text-white dark:text-gray-900 px-8 py-3.5 rounded-full hover:bg-gray-800 dark:hover:bg-gray-100 transition duration-300 shadow-md">
