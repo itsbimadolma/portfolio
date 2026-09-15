@@ -3,6 +3,10 @@ import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { services } from "@/lib/data";
 
+export function generateStaticParams() {
+  return services.map((service) => ({ id: service.id.toString() }));
+}
+
 export default async function ServiceDetail({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const service = services.find((s) => s.id === parseInt(id));

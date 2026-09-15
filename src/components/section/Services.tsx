@@ -3,10 +3,10 @@
 import { useState, useEffect } from "react";
 import { ArrowRight, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { services } from "@/lib/data";
+import { services, type Service } from "@/lib/data";
 
 export default function Services() {
-  const [selectedService, setSelectedService] = useState<typeof services[0] | null>(null);
+  const [selectedService, setSelectedService] = useState<Service | null>(null);
 
   // Prevent scrolling when modal is open
   useEffect(() => {

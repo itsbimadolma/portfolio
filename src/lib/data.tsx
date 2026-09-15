@@ -1,6 +1,18 @@
 import { Layout, Smartphone, PenTool, Palette } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 
-export const services = [
+export type Service = {
+  id: number;
+  title: string;
+  desc: string;
+  fullDescription: string;
+  icon: LucideIcon;
+  color: string;
+  bg: string;
+  image?: string;
+};
+
+export const services: Service[] = [
   {
     id: 1,
     title: "Web design",

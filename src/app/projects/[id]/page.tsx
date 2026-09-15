@@ -3,6 +3,10 @@ import Link from "next/link";
 import { ArrowLeft, Globe, Code2 } from "lucide-react";
 import { projects } from "@/lib/data";
 
+export function generateStaticParams() {
+  return projects.map((project) => ({ id: project.id.toString() }));
+}
+
 export default async function ProjectDetail({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const project = projects.find((p) => p.id === parseInt(id));
